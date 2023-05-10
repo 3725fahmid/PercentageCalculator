@@ -27,6 +27,26 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
+
+## Deploy process in github 
+
+<!-- …or create a new repository on the command line
+
+echo "# PercentageCalculator" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:3725fahmid/PercentageCalculator.git
+git push -u origin main
+
+…or push an existing repository from the command line
+
+git remote add origin git@github.com:3725fahmid/PercentageCalculator.git
+git branch -M main
+git push -u origin main -->
+
+
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.

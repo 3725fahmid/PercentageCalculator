@@ -30,7 +30,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deploy process in github 
 
-<!-- …or create a new repository on the command line
+…or create a new repository on the command line
 
 echo "# PercentageCalculator" >> README.md
 git init
@@ -44,7 +44,7 @@ git push -u origin main
 
 git remote add origin git@github.com:3725fahmid/PercentageCalculator.git
 git branch -M main
-git push -u origin main -->
+git push -u origin main
 
 
 ## Deploy on Vercel

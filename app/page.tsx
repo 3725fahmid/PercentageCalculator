@@ -10,12 +10,24 @@ import { useState } from 'react'
 export default function Home() {
   const [ state, setState] = useState(0)
   return (
-    <div className="md:container md:mx-auto">
-      <h1 >This is Tip top page</h1>
-      <div className="wrapper">
-        <Form/>
-        <Result/>
+    <>
+    <div className="container_content">
+      <div className="content_area">
+        <h1 >This is Tip top page</h1>
+        <div className="wrapper mt-5">
+          <Form/>
+          <Result/>
+        </div>
+        <div className="footer">
+          {/* <h2>footewr</h2> */}
+        </div>
       </div>
     </div>
+    {/* <style jsx>
+      `
+    
+      `
+    </style> */}
+    </>
   )
 }

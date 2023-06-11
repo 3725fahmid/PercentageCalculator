@@ -24,6 +24,7 @@ body {
   color: rgb(var(--foreground-rgb));
   font-family: 'Poppins', sans-serif;
   font-family: 'Cinzel Decorative', cursive;
+  background-color: rgb(104, 1, 130);
 }
 a{
   color: inherit;
@@ -32,4 +33,56 @@ a{
 
 * {
   box-sizing: border-box;
+}
+
+.container_content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      height: auto;
+      padding: 0 2rem;
+}
+
+.content_area{
+       width: 1200px;
+       height: 100%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+}
+
+.content_area h1{
+  color: azure;
+  padding: 2rem 3rem;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: capitalize;
+}
+
+.form_content{
+  width: 100%;
+  height: 70%;
+  border-radius: 10px 10px 0px 0px;
+  padding: 5rem;
+  background-color: rgb(255, 255, 255); 
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; 
+
+}
+.result_content{
+  padding: 4rem;
+  background-color: rgb(244, 246, 224);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.result_content h1{
+  padding: 1rem 2rem;
+  font-size: 22px;
+  border-radius: 10px;
+  color: rgb(255, 140, 0);
+  background-color: rgb(255, 255, 255);
 }

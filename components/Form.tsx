@@ -1,24 +1,24 @@
 import React, { useState } from "react";
 
-const FormComponent = ({ onSubmit }) => {
+const FormComponent = ({ onSubmit }:any) => {
   const [takarporiman, setTakarporiman] = useState(0);
   const [golderporiman, setGolderporiman] = useState(0);
   const [ruparporiman, setRuparporiman] = useState(0);
 
 
-  const MainValue = ({takarporiman,golderporiman,ruparporiman}) => {
-    const taka = parseFloat(takarporiman);
+  const MainValue = () => {
+    const taka = Number(takarporiman);
     const Taka = ( taka * 0.025 )
-    const gold = parseFloat(golderporiman);
+    const gold = Number(golderporiman);
     const Gold = ( gold * 0.025 )
-    const rupa = parseFloat(ruparporiman);
+    const rupa = Number(ruparporiman);
     const Rupa = ( rupa * 0.025 )
     let Total =  Taka + Gold + Rupa ;
     return Total.toString();
   }
 
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e:any) => {
     e.preventDefault();
     onSubmit(MainValue);
   };

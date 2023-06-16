@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 
-const FormComponent = ({ onSubmit }) => {
+const FormComponent = ({ onSubmit }:any) => {
   const [takarporiman, setTakarporiman] = useState(0);
   const [golderporiman, setGolderporiman] = useState(0);
   const [ruparporiman, setRuparporiman] = useState(0);
 
 
-  const MainValue = () => {
+  const MainValue = ({takarporiman,golderporiman,ruparporiman}:any) => {
     const taka = parseFloat(takarporiman);
     const Taka = ( taka * 0.025 )
     const gold = parseFloat(golderporiman);
@@ -18,7 +18,7 @@ const FormComponent = ({ onSubmit }) => {
   }
 
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e:any) => {
     e.preventDefault();
     onSubmit(MainValue);
   };
@@ -32,7 +32,7 @@ const FormComponent = ({ onSubmit }) => {
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label
                   className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                  for="grid_gold"
+                  
                 >
                   স্বর্ণের পরিমাণ 
                 </label>
@@ -43,7 +43,7 @@ const FormComponent = ({ onSubmit }) => {
                   name="golderporiman"
                   placeholder="Enter amount"
                   value={golderporiman}
-                  onChange={(e) => setGolderporiman(e.target.value)}
+                  onChange={(e:any) => setGolderporiman(e.target.value)}
                 />
                 <p className="text-red-500 cursor-pointer text-xs italic">
                 স্বর্ণের যাকাত দেয়ার নিয়ম ?</p>
@@ -51,7 +51,7 @@ const FormComponent = ({ onSubmit }) => {
               <div className="w-full md:w-1/2 px-3">
                 <label
                   className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                  for="grid-rupa"
+                  
                 >
                   রৌপ্যের পরিমাণ 
                 </label>
@@ -62,7 +62,7 @@ const FormComponent = ({ onSubmit }) => {
                   name="ruparporiman"
                   placeholder="Gold Amount"
                   value={ruparporiman}
-                  onChange={(e) => setRuparporiman(e.target.value)}
+                  onChange={(e:any) => setRuparporiman(e.target.value)}
                 />
                 <p className="text-red-500 cursor-pointer text-xs italic">
                 রৌপ্যের যাকাত দেয়ার নিয়ম ?</p>
@@ -72,7 +72,7 @@ const FormComponent = ({ onSubmit }) => {
               <div className="w-full px-3">
                 <label
                   className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                  for="grid-Taka"
+                  
                 >
                    টাকার পরিমাণ 
                 </label>
@@ -83,7 +83,7 @@ const FormComponent = ({ onSubmit }) => {
                   name="takarporiman"
                   placeholder="Takar poriman"
                   value={takarporiman}
-                  onChange={(e) => setTakarporiman(e.target.value)}
+                  onChange={(e:any) => setTakarporiman(e.target.value)}
                 />
                 <p className="text-red-500 text-xs italic cursor-pointer">
                 টাকার যাকাত দেয়ার নিয়ম ?</p>

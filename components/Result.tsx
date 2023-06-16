@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Result = ({ MainValue }:any) => {
+const Result = ( { MainValue }:any ) => {
   return (
     <>
      <div className="container">

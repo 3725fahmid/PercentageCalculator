@@ -7,7 +7,7 @@ import { useState } from 'react'
 
 export default function Home() {
   const [ result, setResult] = useState();
-  const handleFormSubmit = (MainValue:any) => {
+  const handleFormSubmit = (MainValue) => {
     setResult(MainValue)
   };
   return (
